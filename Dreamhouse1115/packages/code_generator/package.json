@@ -1,0 +1,19 @@
+{
+    "name": "code_generator",
+    "version": "0.0.1",
+    "description": "代码生成器+自动绑定",
+    "author": "游子陈",
+    "main": "main.js",
+    "main-menu": {
+        "i18n:MAIN_MENU.package.title/sarsgame/generator": {
+            "message": "code_generator:open-panel"
+        }
+    },
+  "panel": {
+    "main": "panel/index.js",
+    "type": "dockable",
+    "title": "代码生成器+自动绑定",
+    "width": 500,
+    "height": 350
+  }	
+}

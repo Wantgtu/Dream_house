@@ -1,0 +1,29 @@
+{
+  "ver": "1.1.3",
+  "uuid": "79f3de5d-0a4d-4a4c-a32c-a5771bf12438",
+  "importer": "folder",
+  "isBundle": true,
+  "bundleName": "",
+  "priority": 1,
+  "compressionType": {
+    "wechatgame": "subpackage",
+    "quickgame": "subpackage",
+    "qgame": "subpackage"
+  },
+  "optimizeHotUpdate": {
+    "wechatgame": false,
+    "quickgame": false,
+    "qgame": false
+  },
+  "inlineSpriteFrames": {
+    "wechatgame": false,
+    "quickgame": false,
+    "qgame": false
+  },
+  "isRemoteBundle": {
+    "wechatgame": false,
+    "quickgame": false,
+    "qgame": false
+  },
+  "subMetas": {}
+}

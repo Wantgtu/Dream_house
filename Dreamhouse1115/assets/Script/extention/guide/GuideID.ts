@@ -1,0 +1,27 @@
+export enum GuideID {
+    TAP_COOKIE_BTN = 1,
+    DRAG_MERGE,
+    DRAG_MERGE2,
+    DRAG_MERGE3,
+    TAP_FOOD,
+    CLICK_BUY1,
+    CLICK_BUY2,
+    CLICK_TASK,
+    CLICK_BUILD,
+    TASK_GET,
+    BUILD_GET,
+    ENERGY_NOT_ENOUGH,
+    NEW_BAG,
+    BUY_ENERGY,
+    FIND_CHEST,
+    CLICK_CHEST,
+    CD_TIP,
+    CLEAR_CD,
+    CLICK_WATER,
+    LOOK_INFO,
+    MARKET0,
+    MARKET1,
+    RESET_COUNT,
+    DRAG_BAG,//拖拽两个购物袋
+
+}

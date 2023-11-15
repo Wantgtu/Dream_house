@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "aaa6404e-d9bd-4b39-aa9a-c3a22278aee2",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 77,
+  "height": 54,
+  "platformSettings": {},
+  "subMetas": {
+    "img_ui_coincollector_progress_bar_bg": {
+      "ver": "1.0.6",
+      "uuid": "62673310-6bb3-4c34-b8ce-9ca54fe55486",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "aaa6404e-d9bd-4b39-aa9a-c3a22278aee2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 77,
+      "height": 54,
+      "rawWidth": 77,
+      "rawHeight": 54,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 34,
+      "borderRight": 34,
+      "subMetas": {}
+    }
+  }
+}
