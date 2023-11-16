@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>配置面板</h2>
+    <ui-box-container class="layout vertical">
+        <div>
+            <ui-prop name="预制体存放路径(或文件):" tooltip="需要解析的预制体目录">
+                <ui-input class="flex-1" v-value="prefab_path" ></ui-input>
+                <ui-button class="blue" v-on:confirm="onSelectPrefabPath">选择目录</ui-button>
+            </ui-prop>
+
+            <ui-prop name="脚本存放路径(已存在):" >
+                <ui-input class="flex-1" v-value="export_path" tooltip="将脚本导出的位置,目录需要存在,否则需要重启Creator" disabled ></ui-input>
+                <ui-button class="blue" v-on:confirm="onSelectExportPath">选择目录</ui-button>
+            </ui-prop>
+        
+            </ui-prop>
+            <ui-prop name="变量标识" type="string" v-value="TAG" tooltip="会被认定为变量导出"></ui-prop>
+            <ui-prop name="数组标识" type="string" v-value="LIST" tooltip="会被认定为数组导出"></ui-prop>
+            <ui-prop name="父类" type="string" v-value="SUPER_CLASS" tooltip="导出的脚本的父类"></ui-prop>
+            <ui-prop name="支持导出的组件类型" tooltip=" 多个值之间必须用 ',' 隔开" auto-height>
+                <ui-text-area class="flex-1" type="string" size="big" v-value="NORMAL_COMP_LIST"
+                    placeholder="textures/aaa/,&#10;textures/bbb/">
+                </ui-text-area>
+            </ui-prop>
+        
+        </div>
+        <hr />
+        <ui-button class="button blue big" v-disabled="isSaving" @click="saveConfig()">导出</ui-button>
+    </ui-box-container>
+</div>

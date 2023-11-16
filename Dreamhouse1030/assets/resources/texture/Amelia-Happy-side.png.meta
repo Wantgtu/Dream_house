@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d1dc090e-2398-4723-b595-1a4fdaff334b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 149,
+  "height": 199,
+  "platformSettings": {},
+  "subMetas": {
+    "Amelia-Happy-side": {
+      "ver": "1.0.6",
+      "uuid": "e78c81aa-df92-4327-86a7-3e712aa74202",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d1dc090e-2398-4723-b595-1a4fdaff334b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0.5,
+      "trimX": 2,
+      "trimY": 0,
+      "width": 143,
+      "height": 198,
+      "rawWidth": 149,
+      "rawHeight": 199,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

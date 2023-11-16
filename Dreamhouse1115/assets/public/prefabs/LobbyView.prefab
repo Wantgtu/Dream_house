@@ -1691,7 +1691,7 @@
       }
     ],
     "maskNode": {
-      "__id__": 5
+      "__id__": 1
     },
     "param": "LobbyView_onplayBtnButtonClick",
     "handlers": [

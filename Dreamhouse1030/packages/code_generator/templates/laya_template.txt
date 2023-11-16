@@ -1,0 +1,21 @@
+import BaseView from "../../../cfw/mvc/BaseView";
+export default class %ClassName% extends BaseView {
+
+	%info%
+
+    constructor() { super(); }
+
+    onAwake() {
+        super.onAwake()
+		%init%
+    }
+
+    onEnable(): void {
+    }
+
+    onDisable(): void {
+    }
+	
+	%function%
+
+}

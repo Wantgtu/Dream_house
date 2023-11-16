@@ -1,0 +1,16 @@
+{
+    "zs_version": "1.0",
+    "zs_switch": 1,
+    "zs_onemin_show_ad_switch" : 1,
+    "zs_native_limit" : 1,
+    "zs_native_change_switch" : 0,
+	"zs_start_turntable": 1,
+	"zs_video_box" : 30 ,
+	"zs_native_slide_switch" : 1,
+	"zs_jump_time" : 3000,
+	"zs_native_touch_switch" : 1,
+	"zs_native_click_switch" : 1,
+	"zs_banner_native_time" : 30000,
+	"zs_native_close_num" : 2
+} 
+

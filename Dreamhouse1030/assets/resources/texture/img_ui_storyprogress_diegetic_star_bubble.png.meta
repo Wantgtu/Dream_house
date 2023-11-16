@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "1e6f1b4f-ca77-4d0f-99d1-6c5e4eb23356",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 83,
+  "height": 79,
+  "platformSettings": {},
+  "subMetas": {
+    "img_ui_storyprogress_diegetic_star_bubble": {
+      "ver": "1.0.6",
+      "uuid": "160a15c8-b3b0-48e6-ab5f-54ff6b80090e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "1e6f1b4f-ca77-4d0f-99d1-6c5e4eb23356",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 83,
+      "height": 79,
+      "rawWidth": 83,
+      "rawHeight": 79,
+      "borderTop": 27,
+      "borderBottom": 43,
+      "borderLeft": 38,
+      "borderRight": 37,
+      "subMetas": {}
+    }
+  }
+}
