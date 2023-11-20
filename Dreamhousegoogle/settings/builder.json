@@ -17,14 +17,14 @@
   "mainCompressionType": "default",
   "mainIsRemote": false,
   "optimizeHotUpdate": false,
-  "md5Cache": true,
+  "md5Cache": false,
   "nativeMd5Cache": false,
   "encryptJs": false,
   "xxteaKey": "807af253-7c33-44",
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {
-    "packageName": "com.Dreamhouse",
+    "packageName": "com.DreamHouse",
     "REMOTE_SERVER_ROOT": ""
   },
   "ios": {
@@ -52,7 +52,7 @@
     "skipRecord": false,
     "recordPath": ""
   },
-  "appBundle": true,
+  "appBundle": false,
   "agreements": {},
   "includeSDKBox": false,
   "includeAnySDK": false
