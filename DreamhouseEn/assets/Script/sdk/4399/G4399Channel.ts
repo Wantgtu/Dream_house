@@ -1,8 +1,9 @@
 
+import BaseChannel from "../sdk/base/BaseChannel";
+import { ADName } from "../sdk/SDKConfig";
 import G4399RewardAd from "./G4399RewardAd";
-import BaseChannel from "../../sdk/base/BaseChannel";
 import G4399Share from "./G4399Share";
-import { ADName } from "../SDKConfig";
+
 /**
  * 将script标签放入index文件中。
  * <script src="https://h.api.4399.com/h5mini-2.0/h5api-interface.php"></script>

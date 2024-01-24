@@ -67,6 +67,11 @@ export default class BaseHelper {
     showInsertAd(site: number) {
         SDKManager.getChannel().showInsertAd(site)
     }
+    showInsertRewardAd(site: number, callback: ResultCallback) {
+        SDKManager.getChannel().showInsertRewardAd(site, (r: number) => {
+            callback(r);
+        })
+    }
     showRewardAd(site: number, callback: ResultCallback) {
         SDKManager.getChannel().showRewardAd(site, (r: number) => {
             callback(r)

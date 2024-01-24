@@ -33,8 +33,8 @@ export default class Main extends cc.Component {
         engine.resizeUI()
         BaseStorage.LOCAL_NAME = 'LoveAndHouse'
         User.instance().login()
-        // console.log('SDKManager')
-        SDKManager.init(ChannelID.DEV, SDKData)
+        console.log('SDKManager')
+        SDKManager.init(ChannelID.GOOGLE_ADMOB, SDKData)
         SDKManager.getChannel().setVisibleSize(cc.view.getVisibleSize())
 
         // console.log('SDKManager.getChannel().channelID ', SDKManager.getChannel().channelID)

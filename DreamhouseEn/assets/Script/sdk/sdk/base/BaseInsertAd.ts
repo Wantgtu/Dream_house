@@ -1,6 +1,17 @@
 import BaseAd from "./BaseAd";
-import { SDKState, ResultCallback, ResultState } from "../SDKConfig";
+import { SDKState, ResultCallback, ResultState, ADName } from "../SDKConfig";
 import SDKEventID from "../third/SDKEventID";
+import JsNativeBridge from "../native/JsNativeBridge";
+
+let CLASS_NAME = 'org/cocos2dx/javascript/AppActivity';
+
+(<any>window).insertAdCallback = function () {
+    console.log("js insertAdCallback...........");
+    if (window["insertAd"].callback) {
+        window["insertAd"].callback(ResultState.YES)
+        window["insertAd"].callback = null;
+    }
+};
 
 export default abstract class BaseInsertAd extends BaseAd {
 
@@ -8,12 +19,12 @@ export default abstract class BaseInsertAd extends BaseAd {
 
     open(func: ResultCallback) {
         this.callback = func;
-        if (this.state == SDKState.loadSucess) {
-            this.show();
-        } else {
-            this.preload(SDKState.open);
-        }
+        console.log(' BaseInsertAd open state ', this.state)
+        window["insertAd"] = this;
 
+        const adUnitId = this.channel.getParamValue(ADName.insert);
+        console.log(adUnitId);
+        JsNativeBridge.callStaticMethod(CLASS_NAME, "createInsertAd", adUnitId[0]);
     }
 
     preload(logicState: SDKState) {

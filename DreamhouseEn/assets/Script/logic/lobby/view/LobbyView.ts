@@ -5,6 +5,7 @@ import { EventName } from "../../../config/Config";
 import BuildItemModel from "../../scene/model/BuildItemModel";
 import { GEvent } from "../../../cfw/event";
 import ButtonDuration from "../../../cfw/widget/ButtonDuration";
+import CMgr from "../../../sdk/channel-ts/CMgr";
 
 
 const { ccclass, property } = cc._decorator;
@@ -53,7 +54,13 @@ export default class LobbyView extends BaseView {
 	}
 
 
-
+	touchTestEnd() {
+        CMgr.helper.showInsertRewardAd(0, (r: number) => {
+            if (r) {
+                console.log("测试了插屏激励视频广告，这个地方发奖励！");
+            }
+        })
+    }
 
 	onDestroy() {
 

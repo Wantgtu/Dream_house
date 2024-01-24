@@ -38,7 +38,7 @@ export default class Native {
         console.log('NativeTest createRewardedVideoAd data ', data)
         let ad = new NativeRewardedVideoAd();
         ad.data = data;
-        ad.create(data)
+        ad.create(data);
         return ad;
     }
 

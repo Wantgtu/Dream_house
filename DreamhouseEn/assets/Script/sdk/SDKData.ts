@@ -197,9 +197,10 @@ export let SDKData = {
     "google": {
         "name": "google",
         "sdk": "Native",
-        "banner": ["ca-app-pub-3940256099942544/6300978111"],
-        "reward": ["ca-app-pub-3940256099942544/5224354917"],
-        "insert": ["ca-app-pub-3940256099942544/1033173712"]
+        "banner": ["ca-app-pub-8901119287286231/1298356959"],
+        "reward": ["ca-app-pub-8901119287286231/7783874252"],
+        "insert": ["ca-app-pub-8901119287286231/6550683633"],
+        "insertReward": ["ca-app-pub-8901119287286231/8606017242"]
     },
     "h5api": {
         "name": "h5api",

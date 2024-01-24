@@ -10,7 +10,8 @@ export default abstract class SDKFileSystemManager {
     constructor(channel: BaseChannel) {
         this.channel = channel;
         this.sdk = this.channel.getSDK()
-        this.init()
+        console.log(this.sdk);
+        //this.init()
     }
 
     init() {

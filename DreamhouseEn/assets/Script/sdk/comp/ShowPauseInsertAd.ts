@@ -20,13 +20,13 @@ export default class ShowPauseInsertAd extends cc.Component {
         if (GameEventAdapter.instance().isOpen()) {
             return;
         }
-        CMgr.helper.showInsertAd(this.adIndex)
+        //CMgr.helper.showInsertAd(this.adIndex)
     }
     onDestroy() {
         if (GameEventAdapter.instance().isOpen()) {
             return;
         }
-        CMgr.helper.hideInsertAd(this.adIndex)
+        //CMgr.helper.hideInsertAd(this.adIndex)
     }
     // update (dt) {}
 }

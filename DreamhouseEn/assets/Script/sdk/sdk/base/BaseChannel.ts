@@ -15,16 +15,18 @@ import BaseNativeAd from "./BaseNativeAd";
 import BaseCustomAd from "./BaseCustomAd";
 import BaseBlockAd from "./BaseBlockAd";
 import SDKEvent from "../tools/SDKEvent";
+import BaseInsertRewardAd from "./BaseInsertRewardAd";
 
 export default class BaseChannel extends BaseSDK {
-
-
     //激励视频
     protected rewardAd: BaseRewardAd[] = [];
     //banner广告实例
     protected bannerAd: BaseBannerAd[] = [];
     //插屏广告
     protected insertAd: BaseInsertAd[] = [];
+    //插屏激励视频广告
+    protected insertRewardAd: BaseInsertRewardAd[] = [];
+
     //分享实例
     protected share: BaseShare = null;
     //小游戏分包
@@ -404,9 +406,9 @@ export default class BaseChannel extends BaseSDK {
     }
     //展示激励视频广告
     showRewardAd(site: number, callback: ResultCallback) {
-        // console.log(' showRewardAd ', site, this.rewardAd.length)
+        console.log(' showRewardAd ', site, this.rewardAd.length)
         if (this.hasRewardAd() && this.rewardAd[site]) {
-            // console.log('showRewardAd 22222 ')
+            console.log('showRewardAd 22222 ')
             this.rewardAd[site].open(callback)
         } else {
             callback(ResultState.YES)
@@ -416,6 +418,28 @@ export default class BaseChannel extends BaseSDK {
     loadRewardAd(site: number) {
         if (this.hasRewardAd() && this.rewardAd[site]) {
             this.rewardAd[site].reload(SDKState.close)
+        }
+    }
+
+    hasInsertRewardAd() {
+        return this.insertRewardAd.length > 0
+    }
+
+    isInsertRewardAdState(site: number, s: number) {
+        if (this.hasInsertRewardAd() && this.insertRewardAd[site]) {
+            return this.insertRewardAd[site].isState(s)
+        }
+        return false;
+    }
+
+    //展示插屏激励视频广告
+    showInsertRewardAd(site: number, callback: ResultCallback) {
+        console.log(' showInsertRewardAd ', site, this.insertRewardAd.length)
+        if (this.hasInsertRewardAd() && this.insertRewardAd[site]) {
+            console.log('showInsertRewardAd 444444444 ')
+            this.insertRewardAd[site].open(callback);
+        } else {
+            callback(ResultState.YES)
         }
     }
 

@@ -1,7 +1,18 @@
 import BaseAd from "./BaseAd";
-import { SDKState, SDKDir, ResultCallback, ResultState } from "../SDKConfig";
+import { SDKState, SDKDir, ResultCallback, ResultState, ADName } from "../SDKConfig";
 import SDKHelper from "../SDKHelper";
 import SDKEventID from "../third/SDKEventID";
+import JsNativeBridge from "../native/JsNativeBridge";
+
+let CLASS_NAME = 'org/cocos2dx/javascript/AppActivity';
+
+(<any>window).bannerAdCallback = function () {
+    console.log("js bannerAdCallback...........");
+    if (window["bannerAd"].callback) {
+        window["bannerAd"].callback(ResultState.YES)
+        window["bannerAd"].callback = null;
+    }
+};
 
 export default class BaseBannerAd extends BaseAd {
     protected bannerAd: any
@@ -64,11 +75,12 @@ export default class BaseBannerAd extends BaseAd {
 
     open(func: ResultCallback): void {
         this.callback = func;
-        if (this.state == SDKState.loadSucess) {
-            this.show();
-        } else {
-            this.preload(SDKState.open);
-        }
+        console.log(' BaseBannerAd open state ', this.state)
+        window["bannerAd"] = this;
+
+        const adUnitId = this.channel.getParamValue(ADName.banner);
+        console.log(adUnitId);
+        JsNativeBridge.callStaticMethod(CLASS_NAME, "createBannerAd", adUnitId[0]);
     }
 
     getStyle(): any {
@@ -206,15 +218,15 @@ export default class BaseBannerAd extends BaseAd {
     }
 
     hide(): void {
-        // console.log("Banenr hide ")
+        console.log("Banner hide 。。。")
         if (this.bannerAd) {
             // this.setState(SDKState.close)
             this.bannerAd.hide();
             if (this.isVisible()) {
                 this.setVisible(false)
             }
-
         }
+        JsNativeBridge.callStaticMethod(CLASS_NAME, "hideBannerAd", "");
     }
 
     close(): void {

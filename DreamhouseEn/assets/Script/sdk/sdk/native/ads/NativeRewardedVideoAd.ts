@@ -3,7 +3,7 @@ import SdkEventList from "../../tools/SdkEventList";
 import SDKEvent from "../../tools/SDKEvent";
 import JsNativeBridge from "../JsNativeBridge";
 import NativeName from "../NativeName";
-let CLASS_NAME = 'sdk/bridge/RewardAdBridge'
+let CLASS_NAME = 'org/cocos2dx/javascript/AppActivity'
 export default class NativeRewardedVideoAd extends NativeAd {
 
     protected closeListener: SdkEventList = new SdkEventList()
@@ -15,7 +15,7 @@ export default class NativeRewardedVideoAd extends NativeAd {
     }
 
     create(data) {
-        JsNativeBridge.callStaticMethod(CLASS_NAME, NativeName.create, JSON.stringify(data))
+        JsNativeBridge.callStaticMethod(CLASS_NAME, NativeName.create, data)
     }
 
 

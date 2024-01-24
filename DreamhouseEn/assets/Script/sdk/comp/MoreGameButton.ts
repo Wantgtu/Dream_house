@@ -25,6 +25,5 @@ export default class MoreGameButton extends cc.Component {
     touchEnd() {
         CMgr.helper.openMoreGameView(0, 0, 0.3);
     }
-
     // update (dt) {}
 }

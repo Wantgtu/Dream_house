@@ -21,6 +21,7 @@ export class ADName {
     static blockAd: string = 'blockAd'//qq积木广告
     static reward: string = 'reward'//激励视频
     static insert: string = 'insert'//插屏广告
+    static insertReward: string = 'insertReward'//插屏激励视频广告
     static native: string = 'native'//原生广告
     static portal: string = 'portal' //oppo 格子广告
     static BoxBanner: string = 'BoxBanner' //vivo 横幅广告

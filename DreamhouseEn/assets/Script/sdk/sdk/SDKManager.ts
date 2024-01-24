@@ -10,12 +10,12 @@ import DevChannel from "./dev/DevChannel";
 import CocosChannel from "./cocos/CocosChannel";
 import CSJChannel from "./csj/CSJChannel";
 import GoogleChannel from "./google/GoogleChannel";
-import { G4399Channel } from "./4399/G4399Channel";
 import KwaiChannel from "./kwai/KwaiChannel";
 import ViGooChannel from "./vigoo/ViGooChannel";
 import QQChannel2 from "./qq/QQChannel2";
 import KSChannel from "./ks/KSChannel";
 import MiMoChannel from "./mimo/MiMoChannel";
+import { G4399Channel } from "../4399/G4399Channel";
 
 export default class SDKManager {
 

@@ -1,23 +1,31 @@
 import BaseAd from "./BaseAd";
-import { SDKState, ResultState, ResultCallback } from "../SDKConfig";
+import { SDKState, ResultState, ResultCallback, ADName } from "../SDKConfig";
 import SDKEvent from "../tools/SDKEvent";
 import SDKEventID from "../third/SDKEventID";
+import JsNativeBridge from "../native/JsNativeBridge";
+
+let CLASS_NAME = 'org/cocos2dx/javascript/AppActivity';
+
+(<any>window).rewardAdCallback = function () {
+    console.log("js rewardAdCallback...........");
+    if (window["rewardAd"].callback) {
+        window["rewardAd"].callback(ResultState.YES)
+        window["rewardAd"].callback = null;
+    }
+};
 
 export default abstract class BaseRewardAd extends BaseAd {
     protected rewardAd: any;
 
-
     open(callback: ResultCallback) {
-
         console.log(' BaseRewardAd open state ', this.state)
+        window["rewardAd"] = this;
         if (callback) {
             this.callback = callback;
         }
-        if (this.state == SDKState.loadSucess) {
-            this.show()
-        } else {
-            this.reload(SDKState.open)
-        }
+        const adUnitId = this.channel.getParamValue(ADName.reward);
+        console.log(adUnitId);
+        JsNativeBridge.callStaticMethod(CLASS_NAME, "createRewardAd", adUnitId[0]);
     }
 
     reload(s: SDKState) {
@@ -49,14 +57,14 @@ export default abstract class BaseRewardAd extends BaseAd {
         this.setState(SDKState.open)
         this.logicState = SDKState.close;
         if (this.rewardAd) {
-            // console.log(' 展示激励视频 ')
+            console.log(' 展示激励视频 ')
             this.rewardAd.show().then(() => {
                 this.setState(SDKState.open)
-                // console.log(' 激励视频展示成功 ')
+                console.log(' 激励视频展示成功 ')
                 this.pause()
             }).catch(() => {
                 // 失败重试
-                // console.log(' show  激励视频 播放失败重试')
+                console.log(' show  激励视频 播放失败重试')
                 this.rewardAd.load()
                     .then(() => {
                         this.rewardAd.show()

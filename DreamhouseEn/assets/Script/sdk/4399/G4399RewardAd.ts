@@ -1,10 +1,5 @@
-
-
-
-import { ResultState, ResultCallback } from "../SDKConfig";
-import BaseRewardAd from "../base/BaseRewardAd";
-import SDKEvent from "../tools/SDKEvent";
-
+import BaseRewardAd from "../sdk/base/BaseRewardAd";
+import { ResultCallback, ResultState } from "../sdk/SDKConfig";
 
 export default class G4399RewardAd extends BaseRewardAd {
 

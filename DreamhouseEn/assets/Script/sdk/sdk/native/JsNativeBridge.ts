@@ -15,7 +15,7 @@ export default class JsNativeBridge {
      */
     static callStaticMethod(className: string, methodName: string, parameters: string, methodSignOrFunc?: any) {
         if (window['cc']) {
-            console.log('NativeTest cocos creator ')
+            console.log('NativeTest cocos creator ', parameters);
             CocosJsNativeBridge.callStaticMethod(className, methodName, parameters, methodSignOrFunc)
         } else if (window['laya']) {
             console.log(' laya ')

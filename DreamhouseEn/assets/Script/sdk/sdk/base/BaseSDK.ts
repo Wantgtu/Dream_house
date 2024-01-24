@@ -15,7 +15,7 @@ export default class BaseSDK {
     }
     setSDK(sdk: any) {
         this.sdk = sdk;
-        // console.log(' BaseSDK sdk ====== ', this.sdk)
+        console.log(' BaseSDK sdk ====== ', this.sdk)
     }
 
     getSDK() {
