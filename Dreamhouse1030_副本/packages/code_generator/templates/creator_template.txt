@@ -1,0 +1,22 @@
+
+%import%
+const { ccclass, property } = cc._decorator;
+
+@ccclass
+export default class %ClassName% extends %SuperClass% {
+
+	%info%
+
+    onLoad() {
+    }
+
+	
+	
+	
+	onDestroy(){
+		
+	}
+	
+	%function%
+
+}

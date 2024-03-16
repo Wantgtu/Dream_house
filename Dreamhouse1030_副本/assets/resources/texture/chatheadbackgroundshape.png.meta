@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "90e559ae-7fa4-461f-96ec-2ccb331aae5c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 115,
+  "height": 119,
+  "platformSettings": {},
+  "subMetas": {
+    "chatheadbackgroundshape": {
+      "ver": "1.0.6",
+      "uuid": "8c4c7797-563d-49cc-88e6-a4f6152d0bf2",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "90e559ae-7fa4-461f-96ec-2ccb331aae5c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 113,
+      "height": 119,
+      "rawWidth": 115,
+      "rawHeight": 119,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

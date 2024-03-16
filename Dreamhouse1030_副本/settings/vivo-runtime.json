@@ -1,0 +1,19 @@
+{
+  "package": "com.lecoolgame.dgxxl.vivominigame",
+  "name": "蛋糕消消乐",
+  "icon": "F:\\project\\love-and-house2-d\\build-game\\icon-3-512.png",
+  "versionName": "1.1.11",
+  "versionCode": "26",
+  "minPlatformVersion": "1063",
+  "deviceOrientation": "portrait",
+  "logLevel": "log",
+  "npmPath": "",
+  "tinyPackageServer": "",
+  "useDebugKey": false,
+  "privatePath": "F:\\project\\love-and-house2-d\\private.pem",
+  "certificatePath": "F:\\project\\love-and-house2-d\\certificate.pem",
+  "disabledMode": "",
+  "showNpmPath": false,
+  "packFirstScreenRes": false,
+  "separateEngineMode": false
+}

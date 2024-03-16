@@ -1,0 +1,13 @@
+{
+    "zs_version": "1.0",
+    "zs_switch": 1,
+    "zs_native_limit" : 1,
+	"zs_video_box" : 30,
+	"zs_banner_native_switch":0,
+	"zs_native_gap_time":1,
+	"zs_native_change_switch":2,
+	"zs_video_box":30,
+	"zs_box_show_delay":1000,
+	"zs_box_switch":1
+}
+
