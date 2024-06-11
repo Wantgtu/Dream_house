@@ -52,7 +52,7 @@
     "skipRecord": false,
     "recordPath": ""
   },
-  "appBundle": true,
+  "appBundle": false,
   "agreements": {},
   "includeSDKBox": false,
   "includeAnySDK": false

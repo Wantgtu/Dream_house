@@ -66,7 +66,7 @@ export let SDKData = {
         "name": "tt",
         "sdk": "tt",
         "banner": ["8affqucp02ini1on56"],
-        "reward": ["123na5mcllq0124i87"],
+        "reward": ["123na5mcllq0124i87", "3dljnitdhl94mabk4p", "3b9i82g008c5mct15y", "2u3gc29xcnh3059ii1", "n87j7311k4i1j4e1e8"],
         "insert": ["meg33na12dk21k27ea"],
         "share": [
             {

@@ -262,8 +262,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 443,
-      "height": 960
+      "width": 1080,
+      "height": 1920
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -281,8 +281,8 @@
         0,
         0,
         1,
-        2,
-        2,
+        1,
+        1,
         1
       ]
     },
@@ -318,7 +318,7 @@
       "__uuid__": "48f841c3-ed5c-47cb-83b6-e0e60fc2bede"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -342,8 +342,8 @@
     "alignMode": 1,
     "_target": null,
     "_alignFlags": 45,
-    "_left": 97,
-    "_right": 97,
+    "_left": 0,
+    "_right": 0,
     "_top": 0,
     "_bottom": 0,
     "_verticalCenter": 0,
@@ -399,8 +399,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 443,
-      "height": 960
+      "width": 1080,
+      "height": 1920
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -418,8 +418,8 @@
         0,
         0,
         1,
-        2,
-        2,
+        1,
+        1,
         1
       ]
     },
@@ -455,7 +455,7 @@
       "__uuid__": "3178b504-9c62-43f7-b737-7e0a14884565"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -479,8 +479,8 @@
     "alignMode": 1,
     "_target": null,
     "_alignFlags": 45,
-    "_left": 97,
-    "_right": 97,
+    "_left": 2.842170943040401e-14,
+    "_right": -2.842170943040401e-14,
     "_top": 0,
     "_bottom": 0,
     "_verticalCenter": 0,
@@ -536,8 +536,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 443,
-      "height": 960
+      "width": 1080,
+      "height": 1920
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -555,8 +555,8 @@
         0,
         0,
         1,
-        2,
-        2,
+        1,
+        1,
         1
       ]
     },
@@ -591,8 +591,8 @@
     "_spriteFrame": {
       "__uuid__": "4db22812-c41d-40b3-a67f-227836a676e2"
     },
-    "_type": 0,
-    "_sizeMode": 1,
+    "_type": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -616,8 +616,8 @@
     "alignMode": 1,
     "_target": null,
     "_alignFlags": 45,
-    "_left": 97,
-    "_right": 97,
+    "_left": -5.684341886080802e-14,
+    "_right": 5.684341886080802e-14,
     "_top": 0,
     "_bottom": 0,
     "_verticalCenter": 0,

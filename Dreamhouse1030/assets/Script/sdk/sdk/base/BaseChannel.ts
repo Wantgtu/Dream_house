@@ -413,6 +413,24 @@ export default class BaseChannel extends BaseSDK {
         }
     }
 
+    /**
+    * 获取介于min与max之间的随机数，返回值大于等于min，小于等于max
+    * @param min 最小值
+    * @param max 最大值
+    */
+    public getRandom(min: number, max: number): number {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
+    /**
+    * 获取介于min与max之间的随机数，返回值大于等于min，小于max
+    * @param min 最小值
+    * @param max 最大值
+    */
+    public random(min: number, max: number): number {
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+
     loadRewardAd(site: number) {
         if (this.hasRewardAd() && this.rewardAd[site]) {
             this.rewardAd[site].reload(SDKState.close)

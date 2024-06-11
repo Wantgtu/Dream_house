@@ -16,6 +16,8 @@ import User from "./logic/user/User";
 import CMgr from "./sdk/channel-ts/CMgr";
 import UmengEventID from "./config/UmengEventID";
 import Debug from "./cfw/tools/Debug";
+import { GEvent } from "./cfw/event";
+import { EventName } from "./config/Config";
 const { ccclass, property } = cc._decorator;
 @ccclass
 export default class Main extends cc.Component {
@@ -55,6 +57,17 @@ export default class Main extends cc.Component {
         CMgr.helper.startGame();
         CMgr.helper.trackEvent(UmengEventID.enter_game)
         Debug.timeStart();
+
+        if (tt) {
+            tt.onShow((res) => {
+                console.log("启动参数：", res.query);
+                console.log("来源信息：", res.refererInfo);
+                console.log("场景值：", res.scene);
+                console.log("启动场景字段：", res.launch_from, ", ", res.location);
+                window["launchData"] = res;
+                GEvent.instance().emit(EventName.SCENE_LANCH, res)
+            });
+        }
 
         // let url = 'http://www.baidu.com'
         // url = 'https://www.sarsgame.com/config/config.js'

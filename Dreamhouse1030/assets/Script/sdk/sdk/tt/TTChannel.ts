@@ -122,7 +122,20 @@ export default class TTChannel extends BaseChannel {
         }
 
     }
-
+    
+    //展示激励视频广告
+    showRewardAd(site: number, callback: ResultCallback) {
+        console.log('tt showRewardAd ', site, this.rewardAd.length)
+        if (this.rewardAd.length > 0) {
+            site = this.getRandom(0, this.rewardAd.length -1);
+        }
+        if (this.hasRewardAd() && this.rewardAd[site]) {
+            // console.log('showRewardAd 22222 ')
+            this.rewardAd[site].open(callback)
+        } else {
+            callback(ResultState.YES)
+        }
+    }
 
     hasMoreGame() {
         const systemInfo = this.sdk.getSystemInfoSync();

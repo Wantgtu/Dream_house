@@ -1,5 +1,5 @@
 import BaseChannel from "../base/BaseChannel";
-import { ADName, SDKDir, ResultCallback, SDKState } from "../SDKConfig";
+import { ADName, SDKDir, ResultCallback, SDKState, ResultState } from "../SDKConfig";
 import WXBannerAd from "./WXBannerAd";
 import WXInsertAd from "./WXInsertAd";
 import WXRewardAd from "./WXRewardAd";
@@ -297,4 +297,18 @@ export default class WXChannel extends BaseChannel {
     //         return this.bannerAd[site].getInstance()
     //     }
     // }
+
+   //展示激励视频广告
+   showRewardAd(site: number, callback: ResultCallback) {
+        console.log('tt showRewardAd ', site, this.rewardAd.length)
+        if (this.rewardAd.length > 0) {
+            site = this.getRandom(0, this.rewardAd.length -1);
+        }
+        if (this.hasRewardAd() && this.rewardAd[site]) {
+            // console.log('showRewardAd 22222 ')
+            this.rewardAd[site].open(callback)
+        } else {
+            callback(ResultState.YES)
+        }
+    }
 }

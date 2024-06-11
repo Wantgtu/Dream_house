@@ -195,6 +195,9 @@ export class EventName {
 
     static OPEN_MAKET: string = 'OPEN_MAKET'
 
+    static SCENE_LANCH: string = 'SCENE_LANCH'
+    static CHECK_REWARD: string = 'CHECK_REWARD'
+
     static CHANGE_COUNT: string = 'CHANGE_COUNT'
 
     static CHANGE_COST_COUNT: string = 'CHANGE_COST_COUNT'

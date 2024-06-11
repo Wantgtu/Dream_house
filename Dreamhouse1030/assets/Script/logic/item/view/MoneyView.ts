@@ -7,6 +7,7 @@ import GuideMgr from "../../../extention/guide/GuideMgr";
 import SoundC from "../../sound/SoundC";
 import RedTipMgr from "../../../extention/redtip/RedTipMgr";
 import MarketMgr from "../../market/model/MarketMgr";
+import { rewardLayer } from "./rewardLayer";
 
 // Learn TypeScript:
 //  - https://docs.cocos.com/creator/manual/en/scripting/typescript.html
@@ -57,6 +58,10 @@ export default class MoneyView extends BaseView {
     @property(cc.Node)
     setNode: cc.Node = null;
     // onLoad () {}
+    @property(cc.Node)
+    rewardNode: cc.Node = null;
+    @property(cc.Node)
+    rewardLayer: cc.Node = null;
 
     protected model: ItemMgr;
     protected controller: ItemC;
@@ -65,6 +70,7 @@ export default class MoneyView extends BaseView {
     protected goldPos: cc.Vec2
     protected tokenPos: cc.Vec2;
     protected enegyPos: cc.Vec2;
+
     onLoad() {
         MarketMgr.instance();
     }
@@ -72,6 +78,8 @@ export default class MoneyView extends BaseView {
         // this.gEventProxy.on(EventName.UPDATE_ITEM_NUM, this.updateItemNum, this)
         // this.gEventProxy.on(EventName.UPDATE_LEVEL, this.updateLv, this)
         this.gEventProxy.on(EventName.OPEN_MAKET, this.setShopNodeVisible, this)
+        this.gEventProxy.on(EventName.SCENE_LANCH, this.setSceneLaunchData, this)
+        this.gEventProxy.on(EventName.CHECK_REWARD, this.checkReward, this)
         // this.gEventProxy.on(EventName.UPDATE_ITEM_NUM, this.updateExp, this)
         // this.updateLv();
         // this.updateExp(ItemMgr.instance().getItemModel(ItemID.EXP));
@@ -79,6 +87,11 @@ export default class MoneyView extends BaseView {
         // this.updateCoin();
         // this.updateEnergy();
         // this.updateToken();
+        this.rewardLayer.active = false;
+        this.rewardNode.active = false;
+        if (tt) {
+            this.checkReward();
+        }
     }
 
     // updateItemNum(m: ItemModel, p: cc.Vec2) {
@@ -117,6 +130,33 @@ export default class MoneyView extends BaseView {
     // updateToken() {
     //     this.tokenLabel.string = this.model.getItemModel(ItemID.TOKEN).getNum()
     // }
+    public checkReward(){
+        tt.checkScene({
+            scene: "sidebar",
+            success: (res) => {
+                console.log("check scene success: ", res.isExist);
+                //成功回调逻辑
+                this.rewardNode.active = res.isExist;
+            },
+            fail: (res) => {
+                console.log("check scene fail:", res);
+                //失败回调逻辑
+            }
+        });
+    }
+
+    setSceneLaunchData(d) {
+        let rewardLayerTS = this.rewardLayer.getComponent(rewardLayer);
+        if (rewardLayerTS.node.active) {
+            rewardLayerTS.setLaunchFrom(window["launchData"]);
+        }
+    }
+
+    onRewardButtonClick() {
+        this.rewardLayer.active = true;
+        let rewardLayerTS = this.rewardLayer.getComponent(rewardLayer);
+        rewardLayerTS.setLaunchFrom(window["launchData"]);
+    }
 
     onEnergyButtonClick() {
         // this.model.updateCount(ItemID.ENERGY, 100)

@@ -360,7 +360,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Background",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 7
     },
@@ -692,9 +692,7 @@
       "b": 120,
       "a": 200
     },
-    "_N$normalSprite": {
-      "__uuid__": "1b4675f7-04b6-4c86-9238-0739ab71e091"
-    },
+    "_N$normalSprite": null,
     "_N$pressedSprite": {
       "__uuid__": "e9ec654c-97a2-4787-9325-e6a10375219a"
     },
@@ -807,7 +805,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Background",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 19
     },
@@ -1359,9 +1357,7 @@
       "b": 120,
       "a": 200
     },
-    "_N$normalSprite": {
-      "__uuid__": "46527d30-233c-4aa8-8ed4-6c2b7ca56632"
-    },
+    "_N$normalSprite": null,
     "_N$pressedSprite": {
       "__uuid__": "e9ec654c-97a2-4787-9325-e6a10375219a"
     },
