@@ -1,8 +1,0 @@
-import uma from 'uma.min.js';
-
-uma.init({
-  appKey: '61b4628fe0f9bb492b8eb9b1',
-  useOpenid: false, // default true
-  autoGetOpenid: true,
-  debug: true
-});
