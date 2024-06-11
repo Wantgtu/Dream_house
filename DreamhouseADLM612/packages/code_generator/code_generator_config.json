@@ -1,0 +1,8 @@
+{
+  "export_path": "Script/logic/game/view",
+  "prefab_path": "public/prefabs/SelectFoodView.prefab",
+  "TAG": "$V",
+  "LIST": "$A",
+  "SUPER_CLASS": "cc.Component",
+  "NORMAL_COMP_LIST": "cc.Label,cc.Sprite,cc.RichText,cc.Button,cc.ScrollView,cc.PageView,cc.Layout,cc.ProgressBar"
+}

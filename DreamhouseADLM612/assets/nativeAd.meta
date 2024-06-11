@@ -1,0 +1,29 @@
+{
+  "ver": "1.1.3",
+  "uuid": "8a6b7953-d60b-492d-9785-3edcbce335a4",
+  "importer": "folder",
+  "isBundle": true,
+  "bundleName": "",
+  "priority": 1,
+  "compressionType": {
+    "quickgame": "subpackage",
+    "bytedance": "subpackage",
+    "qgame": "subpackage"
+  },
+  "optimizeHotUpdate": {
+    "quickgame": false,
+    "bytedance": false,
+    "qgame": false
+  },
+  "inlineSpriteFrames": {
+    "quickgame": false,
+    "bytedance": false,
+    "qgame": false
+  },
+  "isRemoteBundle": {
+    "quickgame": false,
+    "bytedance": false,
+    "qgame": false
+  },
+  "subMetas": {}
+}

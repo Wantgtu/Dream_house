@@ -1,0 +1,17 @@
+{
+    "x":15,
+    "type":"Script",
+    "switchAble":true,
+    "source":"",
+    "searchKey":"",
+    "removeAble":true,
+    "props":{"presetID":0,"preset":""},
+    "nodeParent":0,
+    "label":"",
+    "isDirectory":false,
+    "isAniNode":true,
+    "hasChild":false,
+    "compId":0,
+    "child":[
+        ]
+}
