@@ -1,0 +1,20 @@
+<resources>
+    <string name="privacy_exit" translatable="false">退出</string>
+    <string name="privacy_agree" translatable="false">同意</string>
+    <string name="users_note" translatable="false">隐私政策及用户协议</string>
+    <string name="privacy_tips_key1" translatable="false">《用户协议》</string>
+    <string name="privacy_tips_key2" translatable="false">《隐私政策》</string>
+    <string name="privacy_tips" translatable="false">
+        欢迎您信任并使用《梦幻别院》，我们非常重视您的个人信息和隐私保护。为更好地保障您的个人权益，请您仔细阅读我们的《用户协议》和《隐私政策》。通过这些条款您可以了解我们如何收集、使用、保护和管理这些信息。
+        感谢您对本公司游戏的支持，我们非常重视您的个人信息和隐私保护。在体验我们的游戏前请仔细阅读完整版《隐私政策》和《服务协议》中所有的条款，包括:
+        1.为了您有良好的游戏体验，我们会基于具体的场景收集您的个人信息。
+        2.我们会基于先进的技术和管理措施保证您个人信息的安全。
+        3.获取传感器信息应用场景说明:应用会获取BODY SENSORS，来提供更好的应用服务，促进应用的可玩性；
+        4.基于您的授权，我们会收集以下权限设备信息:确定设备信息，保证您账号登录的安全性。读写外置存储器:以便保存玩家当前的游戏数据并存储。我们还需要获取您的位置信息，以便向您提供更有用的相关的内容。如不同意授权，以上服务有可能无法正常使用。
+        我们承诺:我们会严格按照《网络安全法》《信息网络传播保护条例》等保护您的个人信信息，如果未经您的授权，我们不会使用您的个人信息用于您未授权的其他途径或目的。
+        您点击同意，即表示您已阅读并同意更新后的《用户协议》及《隐私政策》的全部内容。
+    </string>
+    <string name="confirmed" translatable="false">用户须知已确认</string>
+    <string name="opt_terms" translatable="false">用户协议</string>
+    <string name="opt_privacy" translatable="false">隐私政策</string>
+</resources>
